@@ -8,7 +8,7 @@ sigfox = Sigfox(mode=Sigfox.SIGFOX, rcz=Sigfox.RCZ1)
 # create a Sigfox socket
 s = socket.socket(socket.AF_SIGFOX, socket.SOCK_RAW)
 
-print(binascii.hexlify(sigfox.id()) )
+print('I am device ',  binascii.hexlify(sigfox.id()) )
  # make the socket blocking
 s.setblocking(True)
 
